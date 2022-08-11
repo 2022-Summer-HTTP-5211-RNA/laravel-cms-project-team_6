@@ -29,14 +29,14 @@
             <td>
                 {{$skill->skill_level}}
             </td>
-            <td><a href="/console/skills/image/{{$skill->id}}">Image</a></td>
-            <td><a href="/console/skills/edit/{{$skill->id}}">Edit</a></td>
-            <td><a href="/console/skills/delete/{{$skill->id}}">Delete</a></td>
+            <td><a href="/console/skills/image/{{$skill->id}}"><i class="bi bi-camera"></i></a></td>
+            <td><a href="/console/skills/edit/{{$skill->id}}"><i class="bi bi-pen"></i></a></td>
+            <td><a href="/console/skills/delete/{{$skill->id}}"><i class="bi bi-trash3"></i></a></td>
         </tr>
         @endforeach
     </table>
 
-    <a href="/console/skills/add" class="w3-button w3-green">New Skill</a>
+    <a href="/console/skills/add" class="add_btn">New Skill</a>
 
 </section>
 

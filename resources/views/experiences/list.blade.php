@@ -39,14 +39,14 @@
             <td>
                 {{$experience->end_date}}
             </td>
-            <td><a href="/console/experiences/image/{{$experience->id}}">Image</a></td>
-            <td><a href="/console/experiences/edit/{{$experience->id}}">Edit</a></td>
-            <td><a href="/console/experiences/delete/{{$experience->id}}">Delete</a></td>
+            <td><a href="/console/experiences/image/{{$experience->id}}"><i class="bi bi-camera"></a></td>
+            <td><a href="/console/experiences/edit/{{$experience->id}}"><i class="bi bi-pen"></i></a></td>
+            <td><a href="/console/experiences/delete/{{$experience->id}}"><i class="bi bi-trash3"></i></a></td>
         </tr>
         @endforeach
     </table>
 
     <!-- redirecting to add new experience page -->
-    <a href="/console/experiences/add" class="w3-button w3-green">New Experience</a>
+    <a href="/console/experiences/add" class="add_btn">New Experience</a>
 </section>
 @endsection

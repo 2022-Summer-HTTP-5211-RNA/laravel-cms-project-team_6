@@ -26,8 +26,8 @@
             <td>
                 {{$message->message}}
             </td>
-            <td><a href="mailto:{{$message->user_email}}">Reply</a></td>
-            <td><a href="/console/messages/delete/{{$message->id}}">Delete</a></td>
+            <td><a href="mailto:{{$message->user_email}}"><i class="bi bi-reply"></i></a></td>
+            <td><a href="/console/messages/delete/{{$message->id}}"><i class="bi bi-trash3"></i></a></td>
         </tr>
         @endforeach
     </table>

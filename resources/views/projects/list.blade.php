@@ -32,14 +32,14 @@
                 </td>
                 <td>{{$project->type->title}}</td>
                 <td>{{$project->created_at->format('M j, Y')}}</td>
-                <td><a href="/console/projects/image/{{$project->id}}">Image</a></td>
-                <td><a href="/console/projects/edit/{{$project->id}}">Edit</a></td>
-                <td><a href="/console/projects/delete/{{$project->id}}">Delete</a></td>
+                <td><a href="/console/projects/image/{{$project->id}}"><i class="bi bi-camera"></a></td>
+                <td><a href="/console/projects/edit/{{$project->id}}"><i class="bi bi-pen"></i></a></td>
+                <td><a href="/console/projects/delete/{{$project->id}}"><i class="bi bi-trash3"></i></a></td>
             </tr>
         @endforeach
     </table>
 
-    <a href="/console/projects/add" class="w3-button w3-green">New Project</a>
+    <a href="/console/projects/add" class="add_btn">New Project</a>
 
 </section>
 

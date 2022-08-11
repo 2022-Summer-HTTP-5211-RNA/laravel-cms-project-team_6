@@ -29,14 +29,14 @@
             <td>
                 {{$connect->link}}
             </td>
-            <td><a href="/console/connects/image/{{$connect->id}}">Image</a></td>
-            <td><a href="/console/connects/edit/{{$connect->id}}">Edit</a></td>
-            <td><a href="/console/connects/delete/{{$connect->id}}">Delete</a></td>
+            <td><a href="/console/connects/image/{{$connect->id}}"><i class="bi bi-camera"></a></td>
+            <td><a href="/console/connects/edit/{{$connect->id}}"><i class="bi bi-pen"></i></a></td>
+            <td><a href="/console/connects/delete/{{$connect->id}}"><i class="bi bi-trash3"></i></a></td>
         </tr>
         @endforeach
     </table>
 
-    <a href="/console/connects/add" class="w3-button w3-green">New Connection</a>
+    <a href="/console/connects/add" class="add_btn">New Connection</a>
 
 </section>
 

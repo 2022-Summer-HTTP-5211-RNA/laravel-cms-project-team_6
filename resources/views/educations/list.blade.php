@@ -33,13 +33,13 @@
             <td>
                 {{$education->info}}
             </td>
-            <td><a href="/console/educations/edit/{{$education->id}}">Edit</a></td>
-            <td><a href="/console/educations/delete/{{$education->id}}">Delete</a></td>
+            <td><a href="/console/educations/edit/{{$education->id}}"><i class="bi bi-pen"></i></a></td>
+            <td><a href="/console/educations/delete/{{$education->id}}"><i class="bi bi-trash3"></i></a></td>
         </tr>
         @endforeach
     </table>
 
-    <a href="/console/educations/add" class="w3-button w3-green">New Education</a>
+    <a href="/console/educations/add" class="add_btn">New Education</a>
 
 </section>
 

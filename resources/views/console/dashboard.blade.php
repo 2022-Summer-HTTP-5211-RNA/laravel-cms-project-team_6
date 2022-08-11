@@ -2,7 +2,7 @@
 
 @section ('content')
 
-<section class="w3-padding">
+<section>
 
     <ul id="dashboard">
         <li><a href="/console/projects/list">Manage Projects</a></li>
@@ -14,7 +14,6 @@
         <li><a href="/console/connects/list">Manage Connect me</a></li>
         <li><a href="/console/educations/list">Manage Education me</a></li>
         <li><a href="/console/messages/list">Read Messages</a></li>
-        <li><a href="/console/logout">Log Out</a></li>
     </ul>
 
 </section>

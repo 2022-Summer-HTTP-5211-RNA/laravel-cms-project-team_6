@@ -6,7 +6,7 @@
 
         <title>My Portfolio</title>
 
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
         <link rel="stylesheet" href="{{url('app.css')}}">
 
         <script src="{{url('app.js')}}"></script>
@@ -14,26 +14,24 @@
     </head>
     <body>
 
-        <header class="w3-padding">
+        <header class="navbar">
 
-            <h1 class="w3-text-red">Portfolio Console</h1>
+            <h1 class="">Portfolio Manager</h1>
 
             @if (Auth::check())
-                You are logged in as {{auth()->user()->first}} {{auth()->user()->last}} |
-                <a href="/console/logout">Log Out</a> | 
-                <a href="/console/dashboard">Dashboard</a> | 
-                <a href="/">Website Home Page</a>
+            <i class="bi bi-person"></i> {{auth()->user()->first}} {{auth()->user()->last}} |
+                <a href="/console/logout" class="logout_btn" >Log Out</a> | 
+                <a href="/console/dashboard">Dashboard</a>
             @else
                 <a href="/">Return to My Portfolio</a>
             @endif
 
         </header>
 
-        <hr>
 
         @if (session()->has('message'))
-            <div class="w3-padding w3-margin-top w3-margin-bottom">
-                <div class="w3-red w3-center w3-padding">{{session()->get('message')}}</div>
+            <div>
+                <div class="messages">{{session()->get('message')}}</div>
             </div>
         @endif
 

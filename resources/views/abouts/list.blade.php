@@ -27,16 +27,16 @@
             <td>
                 {{$about->description}}
             </td>
-            <td><a href="/console/abouts/image/{{$about->id}}">Image</a></td>
-            <td><a href="/console/abouts/edit/{{$about->id}}">Edit</a></td>
-            <td><a href="/console/abouts/delete/{{$about->id}}">Delete</a></td>
+            <td><a href="/console/abouts/image/{{$about->id}}"><i class="bi bi-camera"></a></td>
+            <td><a href="/console/abouts/edit/{{$about->id}}"><i class="bi bi-pen"></i></a></td>
+            <td><a href="/console/abouts/delete/{{$about->id}}"><i class="bi bi-trash3"></i></a></td>
         </tr>
         @endforeach
     </table>
 
          <!-- redirecting to add about page -->
 
-    <a href="/console/abouts/add" class="w3-button w3-green">New About</a>
+    <a href="/console/abouts/add" class="add_btn">New About</a>
 
 </section>
 

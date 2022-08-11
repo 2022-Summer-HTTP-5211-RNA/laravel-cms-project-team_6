@@ -15,13 +15,13 @@
         <?php foreach($types as $type): ?>
             <tr>
                 <td>{{$type->title}}</td>
-                <td><a href="/console/types/edit/{{$type->id}}">Edit</a></td>
-                <td><a href="/console/types/delete/{{$type->id}}">Delete</a></td>
+                <td><a href="/console/types/edit/{{$type->id}}"><i class="bi bi-pen"></i></a></td>
+                <td><a href="/console/types/delete/{{$type->id}}"><i class="bi bi-trash3"></i></a></td>
             </tr>
         <?php endforeach; ?>
     </table>
 
-    <a href="/console/types/add" class="w3-button w3-green">New Type</a>
+    <a href="/console/types/add" class="add_btn">New Type</a>
 
 </section>
 
